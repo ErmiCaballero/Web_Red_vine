@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1> Productos </h1>
+    {%for agregar in lista_de_agregar %}
+        <div class = "post-entry">
+        <h2><a href = "">{{agregar.titulo}}</a></h2>
+        <p>{{agregar.text}}</p>
+        </div>
+    {% endfor %}
+{% endblock content %}}
